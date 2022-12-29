@@ -32,6 +32,7 @@
             <a class="btn btn-danger" onclick="return confirm('Are you sure you want to delete the data?')" href="{{ route('delete').'/'.$i->id }}">Delete</a>
             
             @if ($i->completed)
+
             <a class="btn btn-success" href="{{ asset('/' . $i->id . '/completed') }}">Completed</a>
             @else
             <a class="btn btn-secondary" href="{{ asset('/' . $i->id . '/completed') }}">Complete</a>
